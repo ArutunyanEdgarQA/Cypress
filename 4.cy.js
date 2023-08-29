@@ -2,10 +2,10 @@ describe("4. Password Reset - positive", () => {
   it('Password reset"', () => {
     cy.visit("https://app2.abtasty.com/login");
     cy.get('#email', { timeout: 10000 }).should('be.visible');
-    cy.get('.LoginForm__link___qoxwy').click();
-    cy.get('._commonInput_1h7ag_184', { timeout: 10000 }).should('be.visible');
-    cy.get('._commonInput_1h7ag_184').type('test@test.test');
-    cy.get('._button_1qtjo_184').click();
+    cy.get('.LoginForm-module__link___oH9Ss').click();
+    cy.get('._commonInput_11efi_184', { timeout: 10000 }).should('be.visible');
+    cy.get('._commonInput_11efi_184').type('test@test.test');
+    cy.get('._button_qzvqq_184').click();
   });
   it('Checking email"', () => {
     cy.mailhog()
